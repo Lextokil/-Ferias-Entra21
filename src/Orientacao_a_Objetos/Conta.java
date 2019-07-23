@@ -7,17 +7,21 @@ public class Conta {
 	public Double limite = 100.0;
 	public int numero;
 	public Agencia agencia;
+	public static int contator;
 	
 	public Conta() {
-		
+		Conta.contator ++;
+		this.numero = Conta.contator;
 	}
 	
-	public Conta(Double saldo, Double limite, int numero, Agencia agencia) {
+	public Conta(Double saldo, Double limite, Agencia agencia) {
 		super();
 		this.saldo = saldo;
 		this.limite = limite;
-		this.numero = numero;
+		
 		this.agencia = agencia;
+		Conta.contator ++;
+		this.numero = Conta.contator;
 	}
 
 	public void Deposito(Double valor) {

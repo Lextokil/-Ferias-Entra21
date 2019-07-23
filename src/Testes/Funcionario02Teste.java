@@ -16,7 +16,7 @@ public class Funcionario02Teste {
 			f1.nome = Teclado.ReadText("Digite um novo nome: ");
 			f1.salario = Teclado.ReadDouble("Digite o novo Salario: ");
 			f1.DadosFuncionario();
-			resposta = Teclado.ReadText("Degeja continuar?[S/N]");
+			resposta = Teclado.ReadText("Deseja sair?[S/N]");
 			
 			
 			
