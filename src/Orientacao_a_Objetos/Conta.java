@@ -2,6 +2,6 @@ package Orientacao_a_Objetos;
 
 public class Conta {
 	public Double saldo;
-	public Double limite;
+	public Double limite = 100.0;
 	public int numero;
 }
