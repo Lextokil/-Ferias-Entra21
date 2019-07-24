@@ -11,17 +11,17 @@ public class AlunoTeste {
 		
 		Turma t1 = new Turma("Basico",5, "XXt", 6 );
 
-		a1.dataNasc = "17/06/1997";
-		a1.nome = "Carlos";
-		a1.rg = 5054899;
-		a1.turma = t1;
+		a1.setDataNasc("17/06/1997"); 
+		a1.setNome("Carlos"); 
+		a1.setRg(5054899); 
+		a1.setTurma(t1); 
 
-		a2.dataNasc = "23/03/1950";
-		a2.nome = "Chiquito";
-		a2.rg = 234535423;
+		a2.setDataNasc("23/03/1950"); 
+		a2.setNome("Chiquito");
+		a2.setRg(234535423);
 		
-		System.out.println(a1.dataNasc + " " + a1.nome + " "+ a1.rg+ " "+ a1.turma.sigla);
-		System.out.println(a2.dataNasc + " " + a2.nome + " "+ a2.rg);
+		System.out.println(a1.getDataNasc() + " " + a1.getNome() + " "+ a1.getRg()+ " "+ a1.getTurma().getSigla());
+		System.out.println(a2.getDataNasc() + " " + a2.getNome() + " "+ a2.getRg());
 	}
 
 }

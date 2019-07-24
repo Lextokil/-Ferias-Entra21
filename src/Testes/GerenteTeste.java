@@ -8,13 +8,13 @@ public class GerenteTeste {
 		
 		Gerente g1 = new Gerente(1000.0);
 		
-		System.out.println(g1.salario);
+		System.out.println(g1.getSalario());
 		g1.AumentarSalarioFixo();
-		System.out.println(g1.salario);
+		System.out.println(g1.getSalario());
 		
 		g1.AumentarSalarioVariavel(20.0);
 		
-		System.out.println(g1.salario);
+		System.out.println(g1.getSalario());
 	}
 
 }

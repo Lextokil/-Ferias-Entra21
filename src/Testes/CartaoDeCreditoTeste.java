@@ -13,15 +13,15 @@ public class CartaoDeCreditoTeste {
 		Cliente c2 = new Cliente(02, "Xita");
 		
 		
-		cdc1.dataValidade = "23/07/2024";
-		cdc1.numero = 12345;
-		cdc1.cliente = c1;
-		cdc2.dataValidade = "23/07/2035";
-		cdc2.numero = 54321;
-		cdc2.cliente = c2;
+		cdc1.setDataValidade("23/07/2024");
+		cdc1.setNumero(12345);
+		cdc1.setCliente(c1); 
+		cdc2.setDataValidade("23/07/2035"); 
+		cdc2.setNumero(54321); 
+		cdc2.setCliente(c2); 
 		
-		System.out.println(cdc1.dataValidade +" "+ cdc1.numero + " "+ cdc1.cliente.nome);
-		System.out.println(cdc2.dataValidade +" "+ cdc2.numero+ " " +cdc2.cliente.nome);
+		System.out.println(cdc1.getDataValidade() +" "+ cdc1.getNumero() + " "+ cdc1.getCliente().getNome());
+		System.out.println(cdc2.getDataValidade() +" "+ cdc2.getNumero()+ " " +cdc2.getCliente().getNome());
 		
 
 	}

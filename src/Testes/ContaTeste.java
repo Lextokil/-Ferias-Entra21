@@ -12,27 +12,27 @@ public class ContaTeste {
 		Agencia a1 = new Agencia(3456);
 		Agencia a2 = new Agencia(123656);
 		
-		c1.limite = 1000.0;
-		c1.saldo = 500.0;
-		c1.numero = 1243;
-		c1.agencia = a1;
+		c1.setLimite(1000.0); 
+		c1.setSaldo(500.0); 
+		c1.setNumero(1243);
+		c1.setAgencia(a1); 
 		c1.Deposito(750.0);
 		c1.ConsultaSaldo();
 		c1.Saque(350.0);
 		c1.ImprimeExtrato();
 		
 		
-		c2.limite = 2000.0;
-		c2.saldo = 700.0;
-		c2.numero = 2134;
-		c2.agencia = a2;
+		c2.setLimite(2000.0); 
+		c2.setSaldo(800.0); 
+		c2.setNumero(1243);
+		c2.setAgencia(a2); 
 		c2.Deposito(750.0);
 		c2.ConsultaSaldo();
-		c2.Saque(350.0);
+		c2.Saque(130.0);
 		c2.ImprimeExtrato();
 		
-		System.out.println(c1.limite + " "+ c1.numero + " "+ c1.saldo+ " "+ c1.agencia.numero);
-		System.out.println(c2.limite + " "+ c2.numero + " "+ c2.saldo+ " "+ c2.agencia.numero);
+		System.out.println(c1.getLimite() + " "+ c1.getNumero() + " "+ c1.getSaldo()+ " "+ c1.getAgencia().getNumero());
+		System.out.println(c2.getLimite() + " "+ c2.getNumero() + " "+ c2.getSaldo()+ " "+ c2.getAgencia().getNumero());
 	}
 
 }
